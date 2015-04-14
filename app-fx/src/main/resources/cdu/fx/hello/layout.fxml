@@ -1,5 +1,6 @@
 <?import javafx.scene.Scene?>
 <?import javafx.scene.control.Label?>
 <Scene>
+    <!-- This label needs to be bigger!! -->
     <Label text="Hello CDU!"></Label>
 </Scene>
