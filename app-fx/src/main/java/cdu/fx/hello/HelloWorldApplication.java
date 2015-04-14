@@ -1,9 +1,15 @@
 package cdu.fx.hello;
-/**
- * User: Michael Johansen
- * Date: 14.04.2015
- * Time: 16:39
- */
-public class HelloWorldApplication {
-    // extend
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.stage.Stage;
+
+
+public class HelloWorldApplication extends Application{
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        primaryStage.setScene(new Scene(new Label("Hello CDU!")));
+        primaryStage.show();
+    }
 }
