@@ -1,38 +1,106 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.4/jquery.fullPage.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/idea.min.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.4/jquery.fullPage.min.js"></script>
 
     <title>cdu-github-fx by michael-johansen</title>
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <header>
-      <div class="container">
-        <h1>cdu-github-fx</h1>
-        <h2></h2>
 
-        <section id="downloads">
-          <a href="https://github.com/michael-johansen/cdu-github-fx/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/michael-johansen/cdu-github-fx/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/michael-johansen/cdu-github-fx" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+<div id="fullpage">
+    <div class="section">
 
-    <div class="container">
-      <section id="main_content">
-        <h1>
-<a id="title" class="anchor" href="#title" aria-hidden="true"><span class="octicon octicon-link"></span></a>Title</h1>
-      </section>
+        <div class="slide" >
+
+            <h3>JavaFX - For the web developer</h3>
+
+            <section id="downloads">
+                <a href="https://github.com/michael-johansen/cdu-github-fx/zipball/master" class="btn">Download as
+                    .zip</a>
+                <a href="https://github.com/michael-johansen/cdu-github-fx/tarball/master" class="btn">Download as
+                    .tar.gz</a>
+                <a href="https://github.com/michael-johansen/cdu-github-fx" class="btn btn-github"><span
+                        class="icon"></span>View on GitHub</a>
+            </section>
+        </div>
+
+        <div class="slide" data-anchor="download">
+            <h2>git clone https://github.com/michael-johansen/cdu-github-fx</h2>
+        </div>
+
+
     </div>
 
-    
-  </body>
+    <div class="section" >
+        <div class="slide" data-anchor="swing-intro">
+            <h1>Swing</h1>
+            <h3>Ugly on the outside&trade;</h3>
+            <h3>Ugly on the inside&trade;</h3>
+        </div>
+
+        <div class="slide" data-anchor="swing-image">
+            <img src="images/Gui-widgets.png">
+        </div>
+
+        <div class="slide" data-anchor="swing-sample">
+            <pre><code class="java hljs">public class BorderDemo extends JPanel {
+    public BorderDemo() {
+        super(new GridLayout(1,0));
+
+        //Keep references to the next few borders,
+        //for use in titles and compound borders.
+        Border blackline, raisedetched, loweredetched, raisedbevel, loweredbevel, empty;
+
+        //A border that puts 10 extra pixels at the sides and
+        //bottom of each pane.
+        Border paneEdge = BorderFactory.createEmptyBorder(0,10,10,10);
+
+        blackline = BorderFactory.createLineBorder(Color.black);
+        raisedetched = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
+        loweredetched = BorderFactory.createEtchedBorder(EtchedBorder.LOWERED);
+        raisedbevel = BorderFactory.createRaisedBevelBorder();
+        loweredbevel = BorderFactory.createLoweredBevelBorder();
+        empty = BorderFactory.createEmptyBorder();
+
+        //First pane: simple borders
+        JPanel simpleBorders = new JPanel();
+        simpleBorders.setBorder(paneEdge);
+        simpleBorders.setLayout(new BoxLayout(simpleBorders,BoxLayout.Y_AXIS));</code></pre>
+
+            <h3>Both layout and styling are done in Java</h3>
+        </div>
+        <div class="slide" data-anchor="slide-5">5</div>
+        <div class="slide" data-anchor="slide-6">6</div>
+    </div>
+    <div class="section">
+        <div class="slide">
+            <h2>Slides @ http://www.michaeljohansen.net/cdu-github-fx</h2>
+            <h2>Code @ https://github.com/michael-johansen/cdu-github-fx</h2>
+        </div>
+
+    </div>
+</div>
+<script>
+    hljs.initHighlightingOnLoad();
+    $('.slide').wrapInner('<div class="container"></div>');
+    $('#fullpage').fullpage({
+        anchors:['intro', 'old','new']
+    });
+</script>
+</body>
 </html>
