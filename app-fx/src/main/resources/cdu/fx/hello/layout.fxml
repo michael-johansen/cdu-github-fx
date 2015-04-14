@@ -1,6 +1,10 @@
 <?import javafx.scene.Scene?>
 <?import javafx.scene.control.Label?>
-<Scene>
+<?import java.net.URL?>
+<Scene height="400" width="800">
     <!-- This label needs to be bigger!! -->
-    <Label text="Hello CDU!"></Label>
+    <Label styleClass="label" text="Hello CDU!"></Label>
+    <stylesheets>
+        <URL value="@hello.css"></URL>
+    </stylesheets>
 </Scene>
