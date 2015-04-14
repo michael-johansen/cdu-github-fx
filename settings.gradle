@@ -1,0 +1,4 @@
+rootProject.name = 'cdu-github-fx'
+
+include 'app-fx', 'github-api'
+
