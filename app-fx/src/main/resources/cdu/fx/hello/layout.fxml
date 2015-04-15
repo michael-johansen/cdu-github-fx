@@ -2,6 +2,7 @@
 <?import javafx.scene.control.Label?>
 <?import java.net.URL?>
 <Scene height="400" width="800">
+    <!-- Add som buttons to change language -->
     <Label styleClass="label" text="%greeting"></Label>
     <stylesheets>
         <URL value="@hello.css"></URL>
