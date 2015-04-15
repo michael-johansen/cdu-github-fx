@@ -2,7 +2,7 @@
 <?import javafx.scene.control.Label?>
 <?import java.net.URL?>
 <Scene height="400" width="800">
-    <!-- This label needs to be bigger!! -->
+    <!-- This text should be externalized -->
     <Label styleClass="label" text="Hello CDU!"></Label>
     <stylesheets>
         <URL value="@hello.css"></URL>
