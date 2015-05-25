@@ -3,11 +3,14 @@
     ciberPurple:#522e91;
 
     -fx-background-color: ciberGreen;
-    -fx-font-size: 150px;
     width: 400px;
     height: 400px;
 }
 .label{
     -fx-text-fill: ciberPurple;
     -fx-alignment: center;
+    -fx-font-size: 150px;
+}
+.button{
+    -fx-font-size: 20px;
 }
