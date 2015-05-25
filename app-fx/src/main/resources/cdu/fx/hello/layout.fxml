@@ -5,6 +5,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.ToolBar?>
 <Scene height="400" width="800" fx:controller="cdu.fx.hello.HelloWorldController" xmlns:fx="http://javafx.com/fxml">
+    <!-- TODO: Add a input field to make the greeting dynamic, ie. "Hello, some-input!" -->
     <VBox>
         <ToolBar>
             <Button text="Norsk" onAction="#changeToNorwegian"/>
