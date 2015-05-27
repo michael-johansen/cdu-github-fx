@@ -12,6 +12,7 @@ public class CduApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        // This is ugly move to fxml
         primaryStage.setScene(new Scene(new Label("Hello CDU!!")));
         primaryStage.show();
     }
