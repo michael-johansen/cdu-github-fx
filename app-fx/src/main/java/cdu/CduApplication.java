@@ -1,8 +1,7 @@
 package cdu;
 
 import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
+import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 
 /**
@@ -12,8 +11,7 @@ public class CduApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // This is ugly move to fxml
-        primaryStage.setScene(new Scene(new Label("Hello CDU!!")));
+        primaryStage.setScene(FXMLLoader.load(getClass().getResource("/views/hello.fxml")));
         primaryStage.show();
     }
 
