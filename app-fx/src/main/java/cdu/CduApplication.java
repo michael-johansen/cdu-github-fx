@@ -22,6 +22,7 @@ public class CduApplication extends Application {
 
         primaryStage.setScene(loader.load());
         primaryStage.show();
+        // add event handler
     }
 
     public static void main(String[] args) {

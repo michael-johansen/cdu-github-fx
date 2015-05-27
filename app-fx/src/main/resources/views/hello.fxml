@@ -2,7 +2,9 @@
 <?import javafx.scene.Scene?>
 <?import java.net.URL?>
 <!-- Namespace xmlns:fx="http://javafx.com/fxml"  -->
+<!-- Add controller -->
 <Scene>
+    <!-- Add button to change locale, add on action handler -->
     <Label text="%greeting"></Label>
     <stylesheets>
         <URL value="@../css/hello.css"></URL>
