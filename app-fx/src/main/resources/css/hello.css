@@ -1,0 +1,13 @@
+.root{
+    ciberGreen:#C0D72F;
+    ciberPurple:#522e91;
+    -fx-background-color: ciberGreen;
+    width: 400px;
+    height: 400px;
+}
+
+.label{
+    -fx-font-size: 150px;
+    -fx-text-fill: ciberPurple;
+    -fx-alignment: center;
+}

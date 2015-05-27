@@ -1,21 +1,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.Scene?>
+<?import java.net.URL?>
 <Scene>
-    <!-- Make label larger
-.root{
-  ciberGreen:#C0D72F;
-  ciberPurple:#522e91;
-  -fx-background-color: ciberGreen;
-  width: 400px;
-  height: 400px;
-}
-
-.label{
-  -fx-font-size: 150px;
-  -fx-text-fill: ciberPurple;
-  -fx-alignment: center;
-}
-    -->
     <Label text="Hello from FXML"></Label>
-    <!-- insert stylesheets here link with URL @../css/hello.css-->
+    <stylesheets>
+        <URL value="@../css/hello.css"></URL>
+    </stylesheets>
 </Scene>
