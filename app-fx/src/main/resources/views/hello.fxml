@@ -3,8 +3,7 @@
 <?import java.net.URL?>
 <!-- Namespace xmlns:fx="http://javafx.com/fxml"  -->
 <Scene>
-    <!-- externalize message %key to messages_??.properties -->
-    <Label text="Hello from FXML"></Label>
+    <Label text="%greeting"></Label>
     <stylesheets>
         <URL value="@../css/hello.css"></URL>
     </stylesheets>

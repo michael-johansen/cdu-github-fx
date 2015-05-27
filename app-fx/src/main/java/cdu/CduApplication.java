@@ -15,12 +15,12 @@ public class CduApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // FXMLLoader loader = new FXMLLoader();
-        // loader.location(getClass().getResource("/views/hello.fxml"));
-        // String locale = System.getenv().getOrDefault("locale", "no");
-        // loader.setResources(ResourceBundle.getBundle("messages", new Locale(locale)));
-        // loader.load();
-        primaryStage.setScene(FXMLLoader.load(getClass().getResource("/views/hello.fxml")));
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/views/hello.fxml"));
+        String locale = System.getenv().getOrDefault("locale", "no");
+        loader.setResources(ResourceBundle.getBundle("messages", new Locale(locale)));
+
+        primaryStage.setScene(loader.load());
         primaryStage.show();
     }
 
