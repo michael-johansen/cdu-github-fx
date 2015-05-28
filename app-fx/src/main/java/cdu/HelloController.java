@@ -9,6 +9,7 @@ import java.util.Locale;
 /**
  * Created by Michael on 28.05.2015.
  */
+// Implement initializable, add fields
 public class HelloController {
     public void changeToNorsk(ActionEvent actionEvent) {
         Event.fireEvent(actionEvent.getTarget(), new ChangeLocaleEvent(new Locale("no")));

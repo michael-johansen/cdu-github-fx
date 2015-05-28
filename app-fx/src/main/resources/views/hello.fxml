@@ -7,6 +7,7 @@
     <VBox>
         <Button onAction="#changeToNorsk" text="Norsk"></Button>
         <Button onAction="#changeToEnglish" text="English"></Button>
+        <!-- This text needs to be dynamic, add Textfield, expose to controller -->
         <Label text="%greeting"></Label>
         <stylesheets>
             <URL value="@../css/hello.css"></URL>
