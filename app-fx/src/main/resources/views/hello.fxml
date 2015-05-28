@@ -3,12 +3,14 @@
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
 <Scene xmlns:fx="http://javafx.com/fxml" fx:controller="cdu.HelloController">
     <VBox>
         <Button onAction="#changeToNorsk" text="Norsk"></Button>
         <Button onAction="#changeToEnglish" text="English"></Button>
         <!-- This text needs to be dynamic, add Textfield, expose to controller -->
-        <Label text="%greeting"></Label>
+        <TextField fx:id="myText"></TextField>
+        <Label fx:id="myLabel" text="%greeting"></Label>
         <stylesheets>
             <URL value="@../css/hello.css"></URL>
         </stylesheets>
