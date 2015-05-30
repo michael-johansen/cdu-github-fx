@@ -1,0 +1,10 @@
+<!-- Wrap with toolbar, extract to custom component LocaleSelectionToolbar -->
+<?import cdu.components.LocaleSelectionToolbar?>
+<?import javafx.scene.control.Button?>
+<fx:root type="cdu.components.LocaleSelectionToolbar"
+         xmlns:fx="http://javafx.com/fxml"
+         fx:controller="cdu.components.LocaleSelectionToolbarController">
+    <Button onAction="#changeToNorsk" text="Norsk"></Button>
+    <Button onAction="#changeToEnglish" text="English"></Button>
+</fx:root>
+

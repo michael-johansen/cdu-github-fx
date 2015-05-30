@@ -1,5 +1,6 @@
 package cdu;
 
+import cdu.components.ChangeLocaleEvent;
 import javafx.application.Application;
 import javafx.event.EventType;
 import javafx.fxml.FXMLLoader;
@@ -7,7 +8,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Locale;
-import java.util.Properties;
 import java.util.ResourceBundle;
 
 /**
@@ -22,8 +22,8 @@ public class CduApplication extends Application {
 
         primaryStage.show();
         primaryStage.addEventHandler(EventType.ROOT, event -> {
-            if(event instanceof HelloController.ChangeLocaleEvent){
-                HelloController.ChangeLocaleEvent cle = (HelloController.ChangeLocaleEvent) event;
+            if(event instanceof ChangeLocaleEvent){
+                ChangeLocaleEvent cle = (ChangeLocaleEvent) event;
                 loadLocale(primaryStage, cle.getLocale());
             }
         });

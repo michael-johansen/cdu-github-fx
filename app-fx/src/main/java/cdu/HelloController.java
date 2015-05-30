@@ -19,14 +19,6 @@ public class HelloController implements Initializable {
     public TextField myText;
     public Label myLabel;
 
-    public void changeToNorsk(ActionEvent actionEvent) {
-        Event.fireEvent(actionEvent.getTarget(), new ChangeLocaleEvent(new Locale("no")));
-    }
-
-    public void changeToEnglish(ActionEvent actionEvent) {
-        Event.fireEvent(actionEvent.getTarget(), new ChangeLocaleEvent(new Locale("en")));
-    }
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         myLabel.textProperty().bind(Bindings.concat(
@@ -39,16 +31,4 @@ public class HelloController implements Initializable {
         myLabel.visibleProperty().bind(myText.textProperty().isNotEmpty());
     }
 
-    public static class ChangeLocaleEvent extends Event{
-        private final Locale locale;
-
-        public ChangeLocaleEvent(Locale locale) {
-            super(EventType.ROOT);
-            this.locale = locale;
-        }
-
-        public Locale getLocale() {
-            return locale;
-        }
-    }
 }
